@@ -30,10 +30,12 @@
 
 import UIKit
 
-class TextfieldView: UIView
+//  A custom Textfield with popLabel animation when textfield is tapped
+
+class TextfieldView     : UIView
 {
     var textfield       : UITextField!
-    var separatorBar    : UIView!
+    var sepBar          : UIView!
     var imageView       : UIImageView!
     
     var isEmpty         = true
@@ -44,19 +46,15 @@ class TextfieldView: UIView
     {
         self.init() ; self.frame = frame
         
-        self.separatorBar
-            = UIView(x: 0, y: h - 1, w: w, h: 1, bgColor: separatorColor, superView: self)
+        self.sepBar = UIView(x: 0, y: h - 1, w: w, h: 1, bgColor: separatorColor, superView: self)
         
         if image != nil {
             imageView = UIImageView(x: w - 25, y: h - 27, w: 20, h: 20, superView: self)
             imageView.contentMode = .scaleAspectFit
             imageView.image = image!
-        } else {
-            imageView = UIImageView(x: 0, y: 0, w: 0, h: 0, superView: nil)
-        }
+        } else { imageView = UIImageView(x: 0, y: 0, w: 0, h: 0, superView: nil) }
         
-        textfield = UITextField(
-            x: 0, y: h - 25, w: w - 25, h: 20, superView: self)
+        textfield = UITextField(x: 0, y: h - 25, w: w - 25, h: 20, superView: self)
         textfield.placeholder = placeHolder
         textfield.setValue(placeHolderColor, forKeyPath: "_placeholderLabel.textColor")
         textfield.textColor = color
