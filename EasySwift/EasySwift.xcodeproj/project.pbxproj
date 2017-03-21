@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1321744A1E80A38400BDE1E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132174491E80A38400BDE1E3 /* AppDelegate.swift */; };
-		1321744C1E80A38400BDE1E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1321744B1E80A38400BDE1E3 /* ViewController.swift */; };
+		1321744C1E80A38400BDE1E3 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1321744B1E80A38400BDE1E3 /* DemoViewController.swift */; };
 		1321744F1E80A38400BDE1E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1321744D1E80A38400BDE1E3 /* Main.storyboard */; };
 		132174521E80A38400BDE1E3 /* EasySwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 132174501E80A38400BDE1E3 /* EasySwift.xcdatamodeld */; };
 		132174541E80A38400BDE1E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 132174531E80A38400BDE1E3 /* Assets.xcassets */; };
@@ -42,7 +42,7 @@
 /* Begin PBXFileReference section */
 		132174461E80A38400BDE1E3 /* EasySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		132174491E80A38400BDE1E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1321744B1E80A38400BDE1E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1321744B1E80A38400BDE1E3 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		1321744E1E80A38400BDE1E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		132174511E80A38400BDE1E3 /* EasySwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EasySwift.xcdatamodel; sourceTree = "<group>"; };
 		132174531E80A38400BDE1E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -109,15 +109,10 @@
 		132174481E80A38400BDE1E3 /* EasySwift */ = {
 			isa = PBXGroup;
 			children = (
-				132174491E80A38400BDE1E3 /* AppDelegate.swift */,
-				1321744B1E80A38400BDE1E3 /* ViewController.swift */,
+				1321744B1E80A38400BDE1E3 /* DemoViewController.swift */,
 				1321747D1E80A62E00BDE1E3 /* Custom Class */,
 				1321747A1E80A3A900BDE1E3 /* Extensions&Methods */,
-				1321744D1E80A38400BDE1E3 /* Main.storyboard */,
-				132174531E80A38400BDE1E3 /* Assets.xcassets */,
-				132174551E80A38400BDE1E3 /* LaunchScreen.storyboard */,
-				132174581E80A38400BDE1E3 /* Info.plist */,
-				132174501E80A38400BDE1E3 /* EasySwift.xcdatamodeld */,
+				137567D91E813E9D00F0A98A /* Others */,
 			);
 			path = EasySwift;
 			sourceTree = "<group>";
@@ -157,6 +152,19 @@
 				13975A961E81378500C99BBC /* TextfieldView.swift */,
 			);
 			name = "Custom Class";
+			sourceTree = "<group>";
+		};
+		137567D91E813E9D00F0A98A /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				132174491E80A38400BDE1E3 /* AppDelegate.swift */,
+				1321744D1E80A38400BDE1E3 /* Main.storyboard */,
+				132174531E80A38400BDE1E3 /* Assets.xcassets */,
+				132174551E80A38400BDE1E3 /* LaunchScreen.storyboard */,
+				132174581E80A38400BDE1E3 /* Info.plist */,
+				132174501E80A38400BDE1E3 /* EasySwift.xcdatamodeld */,
+			);
+			name = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,7 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1321747C1E80A3CF00BDE1E3 /* UIView.swift in Sources */,
-				1321744C1E80A38400BDE1E3 /* ViewController.swift in Sources */,
+				1321744C1E80A38400BDE1E3 /* DemoViewController.swift in Sources */,
 				13975A991E81385400C99BBC /* UILabel.swift in Sources */,
 				132174521E80A38400BDE1E3 /* EasySwift.xcdatamodeld in Sources */,
 				1321744A1E80A38400BDE1E3 /* AppDelegate.swift in Sources */,

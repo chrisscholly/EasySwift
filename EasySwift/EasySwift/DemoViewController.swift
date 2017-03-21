@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DemoViewController.swift
 //  EasySwift
 //
 //  Created by Sabbe on 21/03/17.
@@ -30,7 +30,7 @@
 
 import UIKit
 
-class ViewController: UIViewController
+class DemoViewController: UIViewController
 {
     override func viewDidLoad()
     {
