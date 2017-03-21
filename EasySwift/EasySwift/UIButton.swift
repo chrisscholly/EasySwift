@@ -1,5 +1,5 @@
 //
-//  DemoViewController.swift
+//  UIButton.swift
 //  EasySwift
 //
 //  Created by Sabbe on 21/03/17.
@@ -30,11 +30,28 @@
 
 import UIKit
 
-class DemoViewController: UIViewController
+extension UIButton
 {
-    override func viewDidLoad()
+    convenience init(title: String, x: CGFloat, y: CGFloat, w: CGFloat, h: CGFloat,
+                     bgColor: UIColor?, superView: UIView?)
     {
-        super.viewDidLoad()
+        self.init()
+        
+        self.frame = CGRect(x: x, y: y, width: w, height: h)
+        
+        self.setTitle(title, for: .normal)
+        self.setTitleColor(.black, for: .normal)
+        
+        self.titleLabel?.numberOfLines = 0
+        
+        if bgColor != nil { self.backgroundColor = bgColor }
+        if superView != nil { superView!.addSubview(self) }
+    }
+    
+    func setProperties(text: String, size: CGFloat, color: UIColor?)
+    {
+        self.setTitle(text, for: .normal)
+        self.titleLabel!.font = UIFont(name: self.titleLabel!.font.fontName, size: size)
+        color != nil ? self.setTitleColor(color, for: .normal) : ()
     }
 }
-

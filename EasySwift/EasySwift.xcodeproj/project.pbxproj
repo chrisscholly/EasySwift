@@ -16,6 +16,9 @@
 		132174621E80A38400BDE1E3 /* EasySwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132174611E80A38400BDE1E3 /* EasySwiftTests.swift */; };
 		1321746D1E80A38400BDE1E3 /* EasySwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1321746C1E80A38400BDE1E3 /* EasySwiftUITests.swift */; };
 		1321747C1E80A3CF00BDE1E3 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1321747B1E80A3CF00BDE1E3 /* UIView.swift */; };
+		133F7A311E81984100D4A9F9 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133F7A301E81984100D4A9F9 /* UIButton.swift */; };
+		133F7A331E8199BC00D4A9F9 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133F7A321E8199BC00D4A9F9 /* String.swift */; };
+		133F7A351E819B7900D4A9F9 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133F7A341E819B7900D4A9F9 /* Date.swift */; };
 		137567D81E81395100F0A98A /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137567D71E81395100F0A98A /* CGRect.swift */; };
 		13975A951E81238D00C99BBC /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13975A941E81238D00C99BBC /* UIColor.swift */; };
 		13975A971E81378500C99BBC /* TextfieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13975A961E81378500C99BBC /* TextfieldView.swift */; };
@@ -55,6 +58,9 @@
 		1321746C1E80A38400BDE1E3 /* EasySwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySwiftUITests.swift; sourceTree = "<group>"; };
 		1321746E1E80A38400BDE1E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1321747B1E80A3CF00BDE1E3 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		133F7A301E81984100D4A9F9 /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		133F7A321E8199BC00D4A9F9 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		133F7A341E819B7900D4A9F9 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		137567D71E81395100F0A98A /* CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
 		13975A941E81238D00C99BBC /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		13975A961E81378500C99BBC /* TextfieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextfieldView.swift; sourceTree = "<group>"; };
@@ -142,6 +148,9 @@
 				13975A941E81238D00C99BBC /* UIColor.swift */,
 				13975A981E81385400C99BBC /* UILabel.swift */,
 				137567D71E81395100F0A98A /* CGRect.swift */,
+				133F7A301E81984100D4A9F9 /* UIButton.swift */,
+				133F7A321E8199BC00D4A9F9 /* String.swift */,
+				133F7A341E819B7900D4A9F9 /* Date.swift */,
 			);
 			name = "Extensions&Methods";
 			sourceTree = "<group>";
@@ -306,12 +315,15 @@
 			files = (
 				1321747C1E80A3CF00BDE1E3 /* UIView.swift in Sources */,
 				1321744C1E80A38400BDE1E3 /* DemoViewController.swift in Sources */,
+				133F7A331E8199BC00D4A9F9 /* String.swift in Sources */,
 				13975A991E81385400C99BBC /* UILabel.swift in Sources */,
 				132174521E80A38400BDE1E3 /* EasySwift.xcdatamodeld in Sources */,
 				1321744A1E80A38400BDE1E3 /* AppDelegate.swift in Sources */,
 				13975A971E81378500C99BBC /* TextfieldView.swift in Sources */,
 				13975A951E81238D00C99BBC /* UIColor.swift in Sources */,
+				133F7A351E819B7900D4A9F9 /* Date.swift in Sources */,
 				137567D81E81395100F0A98A /* CGRect.swift in Sources */,
+				133F7A311E81984100D4A9F9 /* UIButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
