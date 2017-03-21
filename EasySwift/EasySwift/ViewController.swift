@@ -36,6 +36,8 @@ class ViewController: UIViewController
     {
         super.viewDidLoad()
         
+        _ = TextfieldView(frame: CGRect(x: 15, y: 40, w: view.w - 30, h: 50), placeHolder: "Email", image: nil, color: .blue, popLabelColor: .orange, placeHolderColor: .red, separatorColor: .gray, sView: view)
+        
         let boxView = UIView(x: 0, y: 0, w: 200, h: 200, superView: view)
         boxView.backgroundColor = .black
         boxView.centeredInSuperView()

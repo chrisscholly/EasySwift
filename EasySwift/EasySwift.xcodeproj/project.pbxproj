@@ -16,7 +16,10 @@
 		132174621E80A38400BDE1E3 /* EasySwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132174611E80A38400BDE1E3 /* EasySwiftTests.swift */; };
 		1321746D1E80A38400BDE1E3 /* EasySwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1321746C1E80A38400BDE1E3 /* EasySwiftUITests.swift */; };
 		1321747C1E80A3CF00BDE1E3 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1321747B1E80A3CF00BDE1E3 /* UIView.swift */; };
+		137567D81E81395100F0A98A /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137567D71E81395100F0A98A /* CGRect.swift */; };
 		13975A951E81238D00C99BBC /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13975A941E81238D00C99BBC /* UIColor.swift */; };
+		13975A971E81378500C99BBC /* TextfieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13975A961E81378500C99BBC /* TextfieldView.swift */; };
+		13975A991E81385400C99BBC /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13975A981E81385400C99BBC /* UILabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +55,10 @@
 		1321746C1E80A38400BDE1E3 /* EasySwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySwiftUITests.swift; sourceTree = "<group>"; };
 		1321746E1E80A38400BDE1E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1321747B1E80A3CF00BDE1E3 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		137567D71E81395100F0A98A /* CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
 		13975A941E81238D00C99BBC /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		13975A961E81378500C99BBC /* TextfieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextfieldView.swift; sourceTree = "<group>"; };
+		13975A981E81385400C99BBC /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +111,7 @@
 			children = (
 				132174491E80A38400BDE1E3 /* AppDelegate.swift */,
 				1321744B1E80A38400BDE1E3 /* ViewController.swift */,
-				1321747D1E80A62E00BDE1E3 /* Generics Class */,
+				1321747D1E80A62E00BDE1E3 /* Custom Class */,
 				1321747A1E80A3A900BDE1E3 /* Extensions&Methods */,
 				1321744D1E80A38400BDE1E3 /* Main.storyboard */,
 				132174531E80A38400BDE1E3 /* Assets.xcassets */,
@@ -139,15 +145,18 @@
 			children = (
 				1321747B1E80A3CF00BDE1E3 /* UIView.swift */,
 				13975A941E81238D00C99BBC /* UIColor.swift */,
+				13975A981E81385400C99BBC /* UILabel.swift */,
+				137567D71E81395100F0A98A /* CGRect.swift */,
 			);
 			name = "Extensions&Methods";
 			sourceTree = "<group>";
 		};
-		1321747D1E80A62E00BDE1E3 /* Generics Class */ = {
+		1321747D1E80A62E00BDE1E3 /* Custom Class */ = {
 			isa = PBXGroup;
 			children = (
+				13975A961E81378500C99BBC /* TextfieldView.swift */,
 			);
-			name = "Generics Class";
+			name = "Custom Class";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,9 +298,12 @@
 			files = (
 				1321747C1E80A3CF00BDE1E3 /* UIView.swift in Sources */,
 				1321744C1E80A38400BDE1E3 /* ViewController.swift in Sources */,
+				13975A991E81385400C99BBC /* UILabel.swift in Sources */,
 				132174521E80A38400BDE1E3 /* EasySwift.xcdatamodeld in Sources */,
 				1321744A1E80A38400BDE1E3 /* AppDelegate.swift in Sources */,
+				13975A971E81378500C99BBC /* TextfieldView.swift in Sources */,
 				13975A951E81238D00C99BBC /* UIColor.swift in Sources */,
+				137567D81E81395100F0A98A /* CGRect.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
