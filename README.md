@@ -1,2 +1,2 @@
 # EasySwift
-Useful Methods and Extensions that can you use in all your Swift projects!
+Useful Methods and Extensions that you can use in all your Swift projects!
