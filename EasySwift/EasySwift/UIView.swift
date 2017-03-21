@@ -8,7 +8,11 @@
 
 import UIKit
 
+// =================
 // MARK: - Methods -
+// =================
+
+// MARK: - Align list of UIView on X or Y with spacing
 
 func alignOnY(views: [UIView], spacing: CGFloat, x: CGFloat, superView: UIView)
 {
@@ -41,7 +45,9 @@ func alignOnX(views: [UIView], spacing: CGFloat, y: CGFloat, superView: UIView)
     }
 }
 
+// ====================
 // MARK: - Extensions -
+// ====================
 
 extension UIView
 {
@@ -116,5 +122,31 @@ extension UIView
         
         self.layer.borderColor = color != nil
             ? color!.cgColor : UIColor.black.cgColor
+    }
+    
+    // MARK: - Alignment
+    
+    func centeredInSuperView()
+    {
+        if let superView = self.superview {
+            self.frame = CGRect(x: superView.w / 2 - w / 2 ,
+                y: superView.h / 2 - h / 2, width: w, height: h)
+        }
+    }
+    
+    func centeredXSuperView()
+    {
+        if let superView = self.superview {
+            self.frame = CGRect(x: superView.w / 2 - w / 2,
+                y: y, width: w, height: h)
+        }
+    }
+    
+    func centeredYSuperView()
+    {
+        if let superView = self.superview {
+            self.frame = CGRect(x: x, y: superView.h / 2 - h / 2,
+                width: w, height: h)
+        }
     }
 }

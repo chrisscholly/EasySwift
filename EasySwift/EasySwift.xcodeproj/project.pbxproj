@@ -103,7 +103,8 @@
 			children = (
 				132174491E80A38400BDE1E3 /* AppDelegate.swift */,
 				1321744B1E80A38400BDE1E3 /* ViewController.swift */,
-				1321747A1E80A3A900BDE1E3 /* Extensions */,
+				1321747D1E80A62E00BDE1E3 /* Generics Class */,
+				1321747A1E80A3A900BDE1E3 /* Extensions&Methods */,
 				1321744D1E80A38400BDE1E3 /* Main.storyboard */,
 				132174531E80A38400BDE1E3 /* Assets.xcassets */,
 				132174551E80A38400BDE1E3 /* LaunchScreen.storyboard */,
@@ -131,12 +132,19 @@
 			path = EasySwiftUITests;
 			sourceTree = "<group>";
 		};
-		1321747A1E80A3A900BDE1E3 /* Extensions */ = {
+		1321747A1E80A3A900BDE1E3 /* Extensions&Methods */ = {
 			isa = PBXGroup;
 			children = (
 				1321747B1E80A3CF00BDE1E3 /* UIView.swift */,
 			);
-			name = Extensions;
+			name = "Extensions&Methods";
+			sourceTree = "<group>";
+		};
+		1321747D1E80A62E00BDE1E3 /* Generics Class */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Generics Class";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
