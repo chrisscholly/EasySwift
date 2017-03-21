@@ -15,6 +15,7 @@
 		132174571E80A38400BDE1E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 132174551E80A38400BDE1E3 /* LaunchScreen.storyboard */; };
 		132174621E80A38400BDE1E3 /* EasySwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132174611E80A38400BDE1E3 /* EasySwiftTests.swift */; };
 		1321746D1E80A38400BDE1E3 /* EasySwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1321746C1E80A38400BDE1E3 /* EasySwiftUITests.swift */; };
+		1321747C1E80A3CF00BDE1E3 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1321747B1E80A3CF00BDE1E3 /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		132174681E80A38400BDE1E3 /* EasySwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasySwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1321746C1E80A38400BDE1E3 /* EasySwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySwiftUITests.swift; sourceTree = "<group>"; };
 		1321746E1E80A38400BDE1E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1321747B1E80A3CF00BDE1E3 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				132174491E80A38400BDE1E3 /* AppDelegate.swift */,
 				1321744B1E80A38400BDE1E3 /* ViewController.swift */,
+				1321747A1E80A3A900BDE1E3 /* Extensions */,
 				1321744D1E80A38400BDE1E3 /* Main.storyboard */,
 				132174531E80A38400BDE1E3 /* Assets.xcassets */,
 				132174551E80A38400BDE1E3 /* LaunchScreen.storyboard */,
@@ -126,6 +129,14 @@
 				1321746E1E80A38400BDE1E3 /* Info.plist */,
 			);
 			path = EasySwiftUITests;
+			sourceTree = "<group>";
+		};
+		1321747A1E80A3A900BDE1E3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1321747B1E80A3CF00BDE1E3 /* UIView.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1321747C1E80A3CF00BDE1E3 /* UIView.swift in Sources */,
 				1321744C1E80A38400BDE1E3 /* ViewController.swift in Sources */,
 				132174521E80A38400BDE1E3 /* EasySwift.xcdatamodeld in Sources */,
 				1321744A1E80A38400BDE1E3 /* AppDelegate.swift in Sources */,
