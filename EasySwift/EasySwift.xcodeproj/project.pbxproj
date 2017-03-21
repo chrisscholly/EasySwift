@@ -16,6 +16,7 @@
 		132174621E80A38400BDE1E3 /* EasySwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132174611E80A38400BDE1E3 /* EasySwiftTests.swift */; };
 		1321746D1E80A38400BDE1E3 /* EasySwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1321746C1E80A38400BDE1E3 /* EasySwiftUITests.swift */; };
 		1321747C1E80A3CF00BDE1E3 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1321747B1E80A3CF00BDE1E3 /* UIView.swift */; };
+		13975A951E81238D00C99BBC /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13975A941E81238D00C99BBC /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1321746C1E80A38400BDE1E3 /* EasySwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySwiftUITests.swift; sourceTree = "<group>"; };
 		1321746E1E80A38400BDE1E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1321747B1E80A3CF00BDE1E3 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		13975A941E81238D00C99BBC /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				1321747B1E80A3CF00BDE1E3 /* UIView.swift */,
+				13975A941E81238D00C99BBC /* UIColor.swift */,
 			);
 			name = "Extensions&Methods";
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				1321744C1E80A38400BDE1E3 /* ViewController.swift in Sources */,
 				132174521E80A38400BDE1E3 /* EasySwift.xcdatamodeld in Sources */,
 				1321744A1E80A38400BDE1E3 /* AppDelegate.swift in Sources */,
+				13975A951E81238D00C99BBC /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,6 +540,7 @@
 				132174731E80A38400BDE1E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		132174741E80A38400BDE1E3 /* Build configuration list for PBXNativeTarget "EasySwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +549,7 @@
 				132174761E80A38400BDE1E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		132174771E80A38400BDE1E3 /* Build configuration list for PBXNativeTarget "EasySwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +558,7 @@
 				132174791E80A38400BDE1E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
