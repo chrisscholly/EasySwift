@@ -36,11 +36,10 @@ class DemoViewController: UIViewController
     {
         super.viewDidLoad()
         
-        _ = TextfieldView(frame: CGRect(x: 15, y: 40, w: view.w - 30, h: 50), placeHolder: "Email", image: nil, color: .blue, popLabelColor: .orange, placeHolderColor: .red, separatorColor: .gray, sView: view)
-        
         let boxView = UIView(x: 0, y: 0, w: 200, h: 200, superView: view)
         boxView.backgroundColor = .black
         boxView.centeredInSuperView()
+        boxView.rounded()
     
         let mainCircleView = UIView(x: 0, y: 0, w: 150, h: 150, superView: boxView)
         mainCircleView.backgroundColor = .white
@@ -51,8 +50,8 @@ class DemoViewController: UIViewController
     
         for _ in 0...3
         {
-            let circleView = UIView(x: 0, y: 0, w: 20, h: 20, bgColor: .red, superView: boxView)
-            circleView.rounded() ; circleView.borded(color: .red)
+            let circleView = UIView(x: 0, y: 0, w: 20, h: 20, bgColor: .black, superView: boxView)
+            circleView.rounded() ; circleView.borded(color: .black)
             circleViewList1.append(circleView)
         }
         alignOnX(views: circleViewList1, spacing: 15, y: boxView.h / 2 - 10, superView: boxView)
@@ -61,11 +60,16 @@ class DemoViewController: UIViewController
 
         for _ in 0...3
         {
-            let circleView = UIView(x: 0, y: 0, w: 20, h: 20, bgColor: .red, superView: boxView)
-            circleView.rounded() ; circleView.borded(color: .red)
+            let circleView = UIView(x: 0, y: 0, w: 20, h: 20, bgColor: .black, superView: boxView)
+            circleView.rounded() ; circleView.borded(color: .black)
             circleViewList2.append(circleView)
         }
         alignOnY(views: circleViewList2, spacing: 15, x: boxView.w / 2 - 10, superView: boxView)
+        
+        UIView.animate(withDuration: 2, animations: {
+            alignOnY(views: circleViewList1, spacing: 15, x: boxView.w / 2 - 10, superView: boxView)
+            alignOnX(views: circleViewList2, spacing: 15, y: boxView.h / 2 - 10, superView: boxView)
+        })
     }
 }
 
