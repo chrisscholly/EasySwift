@@ -20,9 +20,7 @@ func alignOnY(views: [UIView], spacing: CGFloat, x: CGFloat, superView: UIView)
     
     for view in views { height += view.frame.height }
     height += (spacing * CGFloat(views.count - 1))
-    
-    print(height)
-    
+        
     var y = superView.frame.height / 2 - height / 2
     
     for view in views {
