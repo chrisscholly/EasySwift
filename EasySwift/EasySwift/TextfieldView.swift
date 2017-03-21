@@ -30,8 +30,6 @@
 
 import UIKit
 
-//  A custom Textfield with popLabel animation when textfield is tapped
-
 class TextfieldView     : UIView
 {
     var textfield       : UITextField!
