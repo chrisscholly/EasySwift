@@ -1,10 +1,6 @@
 # Easy Swift (3.x+)
 
-Useful methods and extensions that you can use in all your Swift projects!
-
-Feel free to copy anything directly to your xcode project!
-
-If you enjoy, please add a star and share this project :)
+Extensions add new functionality to an existing class, structure, enumeration, or protocol type. This includes the ability to extend types for which you do not have access to the original source code (known as retroactive modeling). Extensions are similar to categories in Objective-C. (Unlike Objective-C categories, Swift extensions do not have names.)
 
 # Extensions available:
 
@@ -22,5 +18,6 @@ If you enjoy, please add a star and share this project :)
 
 # Contact
 
-Feel free to contact me at : sabbe.kev@gmail.com
-
+Feel free to contact me:
+sabbe.kev@gmail.com
+Kevin SABBE
