@@ -1,4 +1,4 @@
-# Easy Swift 3
+# Easy Swift (3.x+)
 
 Useful methods and extensions that you can use in all your Swift projects!
 
