@@ -70,6 +70,13 @@ class DemoViewController: UIViewController
             alignOnY(views: circleViewList1, spacing: 15, x: boxView.w / 2 - 10, superView: boxView)
             alignOnX(views: circleViewList2, spacing: 15, y: boxView.h / 2 - 10, superView: boxView)
         })
+        
+        let b = UIButton(x: 0, y: 0, w: 0, h: 50, superView: view)
+        b.backgroundColor = .orange
+        
+        UIView.animate(withDuration: 1, delay: 3, animations: {
+            b.frame = CGRect(x: 0, y: 0, width: self.view.w , height: 50)
+        })
     }
 }
 
