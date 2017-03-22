@@ -31,24 +31,73 @@
 
 import UIKit
 
+// MARK: - Extensions -
+
 extension UIButton
 {
-    convenience init(title: String, x: CGFloat, y: CGFloat, w: CGFloat, h: CGFloat,
-                     bgColor: UIColor?, superView: UIView?)
+    // MARK: - Button with Text title
+    
+    convenience init(x: CGFloat, y: CGFloat, w: CGFloat, h: CGFloat,
+                     titleColor: UIColor?, bgColor: UIColor?,
+                     title: String?, alignment: UIControlContentHorizontalAlignment?,
+                     selector: Selector?, superView: UIView?)
     {
         self.init()
         
-        self.frame = CGRect(x: x, y: y, width: w, height: h)
+        self.frame = CGRect(x: x, y: y, w: w, h: h)
         
-        self.setTitle(title, for: .normal)
-        self.setTitleColor(.black, for: .normal)
+        if titleColor != nil {
+            self.setTitleColor(titleColor, for: .normal) }
         
-        self.titleLabel?.numberOfLines = 0
+        if bgColor != nil {
+            self.backgroundColor = bgColor }
         
-        if bgColor != nil { self.backgroundColor = bgColor }
-        if superView != nil { superView!.addSubview(self) }
+        if title != nil {
+            self.setTitle(title, for: .normal) }
+        
+        if alignment != nil {
+            self.contentHorizontalAlignment = alignment! }
+        
+        if selector != nil {
+            self.addTarget(nil, action: selector!, for: .touchUpInside) }
+        
+        if superView != nil {
+            superView!.addSubview(self)
+        }
     }
     
+    // MARK: - Button with Image
+    
+    convenience init(x: CGFloat, y: CGFloat, w: CGFloat, h: CGFloat,
+                     bgColor: UIColor?, image: UIImage?, contentMode: UIViewContentMode?,
+                     insets: UIEdgeInsets?, selector: Selector?, superView: UIView?)
+    {
+        self.init()
+        
+        self.frame = CGRect(x: x, y: y, w: w, h: h)
+        
+        if image != nil {
+            self.setImage(image!, for: .normal)
+        }
+        
+        if contentMode != nil {
+            self.contentMode = contentMode!
+        }
+        
+        if insets != nil {
+            self.imageEdgeInsets = insets!
+        }
+        
+        if selector != nil {
+            self.addTarget(nil, action: selector!, for: .touchUpInside) }
+        
+        if superView != nil {
+            superView!.addSubview(self)
+        }
+    }
+
+    // MARK: - Properties
+        
     func setProperties(text: String, size: CGFloat, color: UIColor?)
     {
         self.setTitle(text, for: .normal)

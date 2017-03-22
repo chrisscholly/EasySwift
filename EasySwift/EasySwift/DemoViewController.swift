@@ -72,12 +72,20 @@ class DemoViewController: UIViewController
             alignOnX(views: circleViewList2, spacing: 15, y: boxView.h / 2 - 10, superView: boxView)
         })
         
-        let b = UIButton(x: 0, y: 0, w: 0, h: 50, superView: view)
+        let b = UIButton(x: 0, y: 0, w: 0, h: 64, superView: view)
         b.backgroundColor = .orange
         
         UIView.animate(withDuration: 1, delay: 3, animations: {
             b.frame = CGRect(x: 0, y: 0, width: self.view.w , height: 50)
         })
+        
+        let button = UIButton(x: view.w / 2 - 140, y: view.h - 70, w: 280, h: 50, titleColor: .white, bgColor: .black, title: "Easy Swift", alignment: .center, selector: #selector(buttonClicked), superView: view)
+        
+        button.rounded()
+    }
+    
+    func buttonClicked() {
+        print(#function)
     }
 }
 
