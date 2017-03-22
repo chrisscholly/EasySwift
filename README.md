@@ -1,4 +1,4 @@
-# EasySwift3
+# Easy Swift 3
 
 Useful methods and extensions that you can use in all your Swift projects!
 
@@ -8,7 +8,7 @@ If you enjoy, please add a store and share this project :)
 
 # Extensions available:
 
-- CGRect
+- [CGRect](../EasySwift/EasySwift/EasySwift/CGRect.swift)
 
 - UIView
 
