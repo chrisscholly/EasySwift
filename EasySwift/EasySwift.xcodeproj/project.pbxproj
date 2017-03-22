@@ -144,10 +144,10 @@
 		1321747A1E80A3A900BDE1E3 /* Extensions&Methods */ = {
 			isa = PBXGroup;
 			children = (
+				137567D71E81395100F0A98A /* CGRect.swift */,
 				1321747B1E80A3CF00BDE1E3 /* UIView.swift */,
 				13975A941E81238D00C99BBC /* UIColor.swift */,
 				13975A981E81385400C99BBC /* UILabel.swift */,
-				137567D71E81395100F0A98A /* CGRect.swift */,
 				133F7A301E81984100D4A9F9 /* UIButton.swift */,
 				133F7A321E8199BC00D4A9F9 /* String.swift */,
 				133F7A341E819B7900D4A9F9 /* Date.swift */,
