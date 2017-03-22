@@ -8,23 +8,17 @@ If you enjoy, please add a store and share this project :)
 
 # Extensions available:
 
-- [CGRect](EasySwift/EasySwift/CGRect.swift target="_blank")
-
-- UIView
-
-- UIButton
-
-- UILabel
-
-- UIColor
-
-- String
-
-- Date
+- [CGRect](EasySwift/EasySwift/CGRect.swift)
+- [UIView](EasySwift/EasySwift/UIView.swift)
+- [UIButton](EasySwift/EasySwift/UIButton.swift)
+- [UILabel](EasySwift/EasySwift/UILabel.swift)
+- [UIColor](EasySwift/EasySwift/UIColor.swift)
+- [String](EasySwift/EasySwift/String.swift)
+- [Date](EasySwift/EasySwift/Date.swift)
 
 # Custom Classes
 
-- TextfieldView
+- [TextfieldView](EasySwift/EasySwift/TextfieldView.swift)
 
 # Contact
 
