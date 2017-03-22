@@ -16,7 +16,7 @@ If you enjoy, please add a store and share this project :)
 - [String](EasySwift/EasySwift/String.swift)
 - [Date](EasySwift/EasySwift/Date.swift)
 
-# Custom Classes
+# Custom classes:
 
 - [TextfieldView](EasySwift/EasySwift/TextfieldView.swift)
 
