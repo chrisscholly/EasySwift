@@ -8,7 +8,7 @@ If you enjoy, please add a store and share this project :)
 
 # Extensions available:
 
-- [CGRect](EasySwift/EasySwift/CGRect.swift){:target="_blank"}
+- [CGRect](EasySwift/EasySwift/CGRect.swift target="_blank")
 
 - UIView
 
