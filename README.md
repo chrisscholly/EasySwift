@@ -8,7 +8,7 @@ If you enjoy, please add a store and share this project :)
 
 # Extensions available:
 
-- [CGRect](master/EasySwift/EasySwift/CGRect.swift)
+- [CGRect](EasySwift/EasySwift/CGRect.swift)
 
 - UIView
 
