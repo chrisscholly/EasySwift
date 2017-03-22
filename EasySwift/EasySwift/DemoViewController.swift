@@ -33,22 +33,31 @@ import UIKit
 
 class DemoViewController: UIViewController
 {
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
+        drawView()
+    }
+    
+    func drawView()
+    {
         let boxView = UIView(x: 0, y: 0, w: 200, h: 200, superView: view)
         boxView.backgroundColor = .black
         boxView.centeredInSuperView()
         boxView.rounded()
-    
+        
         let mainCircleView = UIView(x: 0, y: 0, w: 150, h: 150, superView: boxView)
         mainCircleView.backgroundColor = .white
         mainCircleView.centeredInSuperView()
         mainCircleView.rounded()
         
         var circleViewList1 = [UIView]()
-    
+        
         for _ in 0...3
         {
             let circleView = UIView(x: 0, y: 0, w: 20, h: 20, bgColor: .black, superView: boxView)
@@ -58,7 +67,7 @@ class DemoViewController: UIViewController
         alignOnX(views: circleViewList1, spacing: 15, y: boxView.h / 2 - 10, superView: boxView)
         
         var circleViewList2 = [UIView]()
-
+        
         for _ in 0...3
         {
             let circleView = UIView(x: 0, y: 0, w: 20, h: 20, bgColor: .black, superView: boxView)
@@ -73,19 +82,38 @@ class DemoViewController: UIViewController
         })
         
         let b = UIButton(x: 0, y: 0, w: 0, h: 64, superView: view)
-        b.backgroundColor = .orange
-        
-        UIView.animate(withDuration: 1, delay: 3, animations: {
-            b.frame = CGRect(x: 0, y: 0, width: self.view.w , height: 50)
-        })
+        b.backgroundColor = .black
         
         let button = UIButton(x: view.w / 2 - 140, y: view.h - 70, w: 280, h: 50, titleColor: .white, bgColor: .black, title: "Easy Swift", alignment: .center, selector: #selector(buttonClicked), superView: view)
         
         button.rounded()
+        
+        UIView.animate(withDuration: 1, delay: 3, animations: {
+            b.frame = CGRect(x: 0, y: 0, width: self.view.w , height: 65)
+            UIView.animate(withDuration: 3, delay: 3, animations: {
+                
+                for circle in circleViewList1 + circleViewList2 {
+                    circle.frame = CGRect(x: 0, y: 0, width: 0, height: 0)
+                    circle.centeredInSuperView()
+                    circle.backgroundColor = .orange
+                }
+                UIView.animate(withDuration: 3, delay: 6, animations: {
+                    
+                    for circle in circleViewList1 + circleViewList2
+                    {
+                        circle.frame.size = CGSize(width: 20, height: 20)
+                        alignOnY(views: circleViewList1, spacing: 15, x: boxView.w / 2 - 10, superView: boxView)
+                        alignOnX(views: circleViewList2, spacing: 15, y: boxView.h / 2 - 10, superView: boxView)
+                    }
+                    button.backgroundColor = .orange
+                    button.borded(color: .black)
+                })
+            })
+        })
     }
     
-    func buttonClicked() {
+    func buttonClicked()
+    {
         print(#function)
     }
 }
-

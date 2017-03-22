@@ -41,14 +41,14 @@ func alignOnY(views: [UIView], spacing: CGFloat, x: CGFloat, superView: UIView)
 {
     var height: CGFloat = 0
     
-    for view in views { height += view.frame.height }
+    for view in views { height += view.h }
     height += (spacing * CGFloat(views.count - 1))
     
     var y = superView.frame.height / 2 - height / 2
     
     for view in views {
-        view.frame = CGRect(x: x, y: y, width: view.frame.width, height: view.frame.height)
-        y += view.frame.height + spacing
+        view.frame = CGRect(x: x, y: y, w: view.w, h: view.h)
+        y += view.h + spacing
     }
 }
 
@@ -59,10 +59,10 @@ func alignOnX(views: [UIView], spacing: CGFloat, y: CGFloat, superView: UIView)
     for view in views { width += view.frame.width }
     width += (spacing * CGFloat(views.count - 1))
     
-    var x = superView.frame.width / 2 - width / 2
+    var x = superView.w / 2 - width / 2
     for view in views {
-        view.frame = CGRect(x: x, y: y, width: view.frame.width, height: view.frame.height)
-        x += view.frame.width + spacing
+        view.frame = CGRect(x: x, y: y, w: view.w, h: view.h)
+        x += view.w + spacing
     }
 }
 
@@ -74,7 +74,8 @@ extension UIView
 {
     // MARK: - inits
     
-    convenience init(x: CGFloat, y: CGFloat, w: CGFloat, h: CGFloat, superView: UIView?)
+    convenience init(x: CGFloat, y: CGFloat, w: CGFloat, h: CGFloat,
+                     superView: UIView?)
     {
         self.init()
         
@@ -85,7 +86,8 @@ extension UIView
         }
     }
     
-    convenience init(x: CGFloat, y: CGFloat, w: CGFloat, h: CGFloat, bgColor: UIColor?, superView: UIView?)
+    convenience init(x: CGFloat, y: CGFloat, w: CGFloat, h: CGFloat,
+                     bgColor: UIColor?, superView: UIView?)
     {
         self.init()
         
@@ -133,14 +135,20 @@ extension UIView
     
     func rounded()
     {
-        self.layer.cornerRadius     = self.frame.height / 2
-        self.layer.masksToBounds    = true
+        self.layer.cornerRadius = self.frame.height / 2
+        self.layer.masksToBounds = true
     }
     
     func borded(color: UIColor?)
     {
-        self.layer.borderWidth      = 1
-        
+        self.layer.borderWidth = 1
+        self.layer.borderColor = color != nil
+            ? color!.cgColor : UIColor.black.cgColor
+    }
+    
+    func borded(color: UIColor?, width: CGFloat)
+    {
+        self.layer.borderWidth = 1
         self.layer.borderColor = color != nil
             ? color!.cgColor : UIColor.black.cgColor
     }
