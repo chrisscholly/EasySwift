@@ -4,13 +4,13 @@ Extensions add new functionality to an existing class, structure, enumeration, o
 
 # Extensions available:
 
-- [CGRect](EasySwift/EasySwift/CGRect.swift)
-
 - [UIView](EasySwift/EasySwift/UIView.swift) - [UIButton](EasySwift/EasySwift/UIButton.swift) - [UILabel](EasySwift/EasySwift/UILabel.swift) - [UIColor](EasySwift/EasySwift/UIColor.swift)
 
 - [String](EasySwift/EasySwift/String.swift) - [Date](EasySwift/EasySwift/Date.swift) - [Int](EasySwift/EasySwift/Int.swift)
 
 - [UIViewController](EasySwift/EasySwift/UIViewController.swift)
+
+- [CGRect](EasySwift/EasySwift/CGRect.swift)
 
 # Custom classes:
 
@@ -19,5 +19,7 @@ Extensions add new functionality to an existing class, structure, enumeration, o
 # Contact
 
 Feel free to contact me:
+
 sabbe.kev@gmail.com
+
 Kevin SABBE
