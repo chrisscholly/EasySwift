@@ -110,6 +110,10 @@ class DemoViewController: UIViewController
                 })
             })
         })
+        
+        UIView.animate(withDuration: 10, animations: {
+            
+        })
     }
     
     func buttonClicked()
