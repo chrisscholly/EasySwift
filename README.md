@@ -11,6 +11,7 @@ Extensions add new functionality to an existing class, structure, enumeration, o
 - [UIColor](EasySwift/EasySwift/UIColor.swift)
 - [String](EasySwift/EasySwift/String.swift)
 - [Date](EasySwift/EasySwift/Date.swift)
+- [Int](EasySwift/EasySwift/Int.swift)
 
 # Custom classes:
 
