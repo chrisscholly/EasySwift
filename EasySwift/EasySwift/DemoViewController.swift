@@ -111,9 +111,10 @@ class DemoViewController: UIViewController
             })
         })
         
-        UIView.animate(withDuration: 10, animations: {
-            
-        })
+        print("hello".toInt())
+        print("123".toInt())
+        print("123131.1313".toFloat())
+        print("1313131.11.11.11.".toDouble())
     }
     
     func buttonClicked()

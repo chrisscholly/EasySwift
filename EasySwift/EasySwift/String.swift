@@ -75,4 +75,23 @@ extension String
             let result = emailTest.evaluate(with: self)
             return result
     }
+    
+    var length: Int { return self.characters.count }
+    
+    // MARK: - Converters
+    
+    func toInt() -> Int? {
+        let num = NumberFormatter().number(from: self)
+        return num != nil ? (num!.intValue) : (nil)
+    }
+    
+    func toDouble() -> Double? {
+        let num = NumberFormatter().number(from: self)
+        return num != nil ? (num!.doubleValue) : (nil)
+    }
+    
+    func toFloat() -> Float? {
+        let num = NumberFormatter().number(from: self)
+        return num != nil ? (num!.floatValue) : (nil)
+    }
 }
