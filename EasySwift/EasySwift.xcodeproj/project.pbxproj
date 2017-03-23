@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		131E4DCA1E84752000277C62 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131E4DC91E84752000277C62 /* UIViewController.swift */; };
 		1321744A1E80A38400BDE1E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132174491E80A38400BDE1E3 /* AppDelegate.swift */; };
 		1321744C1E80A38400BDE1E3 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1321744B1E80A38400BDE1E3 /* DemoViewController.swift */; };
 		1321744F1E80A38400BDE1E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1321744D1E80A38400BDE1E3 /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		131E4DC91E84752000277C62 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		132174461E80A38400BDE1E3 /* EasySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		132174491E80A38400BDE1E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1321744B1E80A38400BDE1E3 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				133F7A321E8199BC00D4A9F9 /* String.swift */,
 				133F7A341E819B7900D4A9F9 /* Date.swift */,
 				1365692E1E83E3BF0036DAE4 /* Int.swift */,
+				131E4DC91E84752000277C62 /* UIViewController.swift */,
 			);
 			name = "Extensions&Methods";
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				13975A991E81385400C99BBC /* UILabel.swift in Sources */,
 				132174521E80A38400BDE1E3 /* EasySwift.xcdatamodeld in Sources */,
 				1321744A1E80A38400BDE1E3 /* AppDelegate.swift in Sources */,
+				131E4DCA1E84752000277C62 /* UIViewController.swift in Sources */,
 				13975A971E81378500C99BBC /* TextfieldView.swift in Sources */,
 				13975A951E81238D00C99BBC /* UIColor.swift in Sources */,
 				133F7A351E819B7900D4A9F9 /* Date.swift in Sources */,
