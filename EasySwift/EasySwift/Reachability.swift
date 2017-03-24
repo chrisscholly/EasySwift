@@ -1,11 +1,10 @@
 //
-//  File.swift
+//  Reachability.Swift
 //  EasySwift
 //
 //  Created by Sabbe on 24/03/17.
 //  Copyright © 2017 sabbe.kev. All rights reserved.
 //
-
 
 //  MIT License
 //
@@ -29,24 +28,31 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-// MARK: - Extensions -
 
-import UIKit
+import SystemConfiguration
 
-extension Double
+public class Reachability
 {
-    // MARK: - Check
-    
-    public var isPositive: Bool     { return (self > 0) }
-    public var isNegative: Bool     { return (self < 0) }
-    
-    // MARK: - Converters
-    
-    public var toInt: Int           { return Int(self) }
-    public var toString: String     { return String(self) }
-    public var toFloat: Float       { return Float(self) }
-    public var toCGFloat: CGFloat   { return CGFloat(self) }
-    
-    public var toUInt: UInt         { return UInt(self) }
-    public var toInt32: Int32       { return Int32(self) }
+    class func isConnectedToNetwork() -> Bool
+    {
+        var zeroAddress = sockaddr_in(sin_len: 0, sin_family: 0, sin_port: 0, sin_addr: in_addr(s_addr: 0), sin_zero: (0, 0, 0, 0, 0, 0, 0, 0))
+        zeroAddress.sin_len = UInt8(MemoryLayout.size(ofValue: zeroAddress))
+        zeroAddress.sin_family = sa_family_t(AF_INET)
+        
+        let defaultRouteReachability = withUnsafePointer(to: &zeroAddress) {
+            $0.withMemoryRebound(to: sockaddr.self, capacity: 1) {zeroSockAddress in
+                SCNetworkReachabilityCreateWithAddress(nil, zeroSockAddress)
+            }
+        }
+        
+        var flags: SCNetworkReachabilityFlags = SCNetworkReachabilityFlags(rawValue: 0)
+        if SCNetworkReachabilityGetFlags(defaultRouteReachability!, &flags) == false {
+            return false
+        }
+        
+        let isReachable = (flags.rawValue & UInt32(kSCNetworkFlagsReachable)) != 0
+        let needsConnection = (flags.rawValue & UInt32(kSCNetworkFlagsConnectionRequired)) != 0
+        return (isReachable && !needsConnection)
+    }
 }
+

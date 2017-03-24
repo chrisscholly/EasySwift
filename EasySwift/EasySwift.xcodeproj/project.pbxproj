@@ -27,6 +27,8 @@
 		135FBADF1E851B1800C40E0F /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FBADE1E851B1800C40E0F /* UIScrollView.swift */; };
 		1365692F1E83E3BF0036DAE4 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1365692E1E83E3BF0036DAE4 /* Int.swift */; };
 		137567D81E81395100F0A98A /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137567D71E81395100F0A98A /* CGRect.swift */; };
+		137CB1AA1E852E0E006C55DA /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137CB1A91E852E0E006C55DA /* Reachability.swift */; };
+		137CB1AC1E852EAB006C55DA /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137CB1AB1E852EAB006C55DA /* Defaults.swift */; };
 		1391C1701E85100200D34419 /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391C16F1E85100200D34419 /* Float.swift */; };
 		1391C1721E85104200D34419 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391C1711E85104200D34419 /* CGFloat.swift */; };
 		1391C1741E85107700D34419 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391C1731E85107700D34419 /* Double.swift */; };
@@ -80,6 +82,8 @@
 		135FBADE1E851B1800C40E0F /* UIScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
 		1365692E1E83E3BF0036DAE4 /* Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		137567D71E81395100F0A98A /* CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
+		137CB1A91E852E0E006C55DA /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		137CB1AB1E852EAB006C55DA /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		1391C16F1E85100200D34419 /* Float.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Float.swift; sourceTree = "<group>"; };
 		1391C1711E85104200D34419 /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
 		1391C1731E85107700D34419 /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
@@ -140,6 +144,7 @@
 				1321744B1E80A38400BDE1E3 /* DemoViewController.swift */,
 				135FBAD51E85196000C40E0F /* Types */,
 				1321747A1E80A3A900BDE1E3 /* UI */,
+				137CB1A81E852DF5006C55DA /* Helpers */,
 				1321747D1E80A62E00BDE1E3 /* Custom Class */,
 				137567D91E813E9D00F0A98A /* Others */,
 			);
@@ -186,7 +191,6 @@
 			isa = PBXGroup;
 			children = (
 				13975A961E81378500C99BBC /* TextfieldView.swift */,
-				1391C1751E8512FD00D34419 /* Device.swift */,
 			);
 			name = "Custom Class";
 			sourceTree = "<group>";
@@ -215,6 +219,16 @@
 				132174501E80A38400BDE1E3 /* EasySwift.xcdatamodeld */,
 			);
 			name = Others;
+			sourceTree = "<group>";
+		};
+		137CB1A81E852DF5006C55DA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1391C1751E8512FD00D34419 /* Device.swift */,
+				137CB1AB1E852EAB006C55DA /* Defaults.swift */,
+				137CB1A91E852E0E006C55DA /* Reachability.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,8 +374,10 @@
 				1321747C1E80A3CF00BDE1E3 /* UIView.swift in Sources */,
 				1321744C1E80A38400BDE1E3 /* DemoViewController.swift in Sources */,
 				133F7A331E8199BC00D4A9F9 /* String.swift in Sources */,
+				137CB1AA1E852E0E006C55DA /* Reachability.swift in Sources */,
 				1365692F1E83E3BF0036DAE4 /* Int.swift in Sources */,
 				1391C1741E85107700D34419 /* Double.swift in Sources */,
+				137CB1AC1E852EAB006C55DA /* Defaults.swift in Sources */,
 				13975A991E81385400C99BBC /* UILabel.swift in Sources */,
 				135FBADF1E851B1800C40E0F /* UIScrollView.swift in Sources */,
 				132174521E80A38400BDE1E3 /* EasySwift.xcdatamodeld in Sources */,

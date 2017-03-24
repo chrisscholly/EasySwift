@@ -6,10 +6,6 @@
 //  Copyright © 2017 sabbe.kev. All rights reserved.
 //
 
-import UIKit
-
-import UIKit
-
 //  MIT License
 //
 //  Copyright (c) 2017 sabbek
