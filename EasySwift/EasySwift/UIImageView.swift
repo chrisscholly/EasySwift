@@ -32,6 +32,28 @@ import UIKit
 
 extension UIImageView
 {
+    convenience init(frame: CGRect, image: UIImage, contentMode: UIViewContentMode)
+    {
+        self.init()
+        
+        self.frame = frame
+        
+        self.image = image
+        self.contentMode = contentMode
+    }
+    
+    convenience init(frame: CGRect, image: UIImage, contentMode: UIViewContentMode, superView: UIView)
+    {
+        self.init()
+        
+        self.frame = frame
+        
+        self.image = image
+        self.contentMode = contentMode
+        
+        superView.addSubview(self)
+    }
+    
     convenience init(x: CGFloat, y: CGFloat, w: CGFloat, h: CGFloat, image: UIImage, contentMode: UIViewContentMode)
     {
         self.init()
@@ -40,6 +62,18 @@ extension UIImageView
         
         self.image = image
         self.contentMode = contentMode
+    }
+    
+    convenience init(x: CGFloat, y: CGFloat, w: CGFloat, h: CGFloat, image: UIImage, contentMode: UIViewContentMode, superView: UIView)
+    {
+        self.init()
+        
+        self.frame = CGRect(x: x, y: y, width: w, height: h)
+        
+        self.image = image
+        self.contentMode = contentMode
+        
+        superView.addSubview(self)
     }
     
     func imageFromURL(_ url: String, placeholder: UIImage, fadeIn: Bool = true, shouldCacheImage: Bool = true, closure: ((_ image: UIImage?) -> ())? = nil)
