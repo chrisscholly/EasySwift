@@ -33,6 +33,8 @@ import UIKit
 
 class DemoViewController: UIViewController
 {
+    var numberLabel: UILabel!
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return UIStatusBarStyle.lightContent
     }
@@ -40,83 +42,80 @@ class DemoViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-                
-        drawView()
         
+        drawTopView()
+        drawContentView()
+        drawBottomView()
     }
     
-    func drawView()
+    func drawTopView()
     {
-        let boxView = UIView(x: 0, y: 0, w: 200, h: 200, superView: view)
-        boxView.backgroundColor = .black
-        boxView.centeredInSuperView()
-        boxView.rounded()
+        // topView
         
-        let mainCircleView = UIView(x: 0, y: 0, w: 150, h: 150, superView: boxView)
-        mainCircleView.backgroundColor = .white
-        mainCircleView.centeredInSuperView()
-        mainCircleView.rounded()
+        let topView = UIView(x: 0, y: 0, w: view.w, h: 64, superView: view)
+        topView.backgroundColor = UIColor(r: 28, g: 55, b: 81)
         
-        var circleViewList1 = [UIView]()
+        _ = UILabel(text: "Easy Swift", x: 0, y: 20, width: view.w, height: 44, textColor: UIColor(r: 131, g: 140, b: 150), fontSize: 20, align: .center, superView: topView)
+    }
+    
+    func drawContentView()
+    {
+        // contentView
         
-        for _ in 0...3
+        let contentView = UIView(x: 0, y: 64, w: view.w, h: view.h - 64, superView: view)
+        contentView.backgroundColor = UIColor(r: 131, g: 140, b: 150)
+        
+        numberLabel = UILabel(x: 0, y: 0, w: 50, h: 50, superView: view)
+        numberLabel.setTextProperties(text: "0", size: 36, color: UIColor(r: 28, g: 55, b: 81), align: .center)
+        numberLabel.centeredInSuperView()
+        
+        // left squares
+        
+        var leftSquares = [UIView]()
+        let squareSize: CGFloat = contentView.h / 39
+        for _ in 0...19
         {
-            let circleView = UIView(x: 0, y: 0, w: 20, h: 20, bgColor: .black, superView: boxView)
-            circleView.rounded() ; circleView.borded(color: .black)
-            circleViewList1.append(circleView)
+            let squareView = UIView(x: 0, y: 0, w: squareSize, h: squareSize, superView: contentView)
+            squareView.backgroundColor = (UIColor(r: 28, g: 55, b: 81))
+            leftSquares.append(squareView)
         }
-        alignOnX(views: circleViewList1, spacing: 15, y: boxView.h / 2 - 10, superView: boxView)
+        alignOnY(views: leftSquares, spacing: squareSize, x: 0, superView: contentView)
         
-        var circleViewList2 = [UIView]()
+        // right squares
         
-        for _ in 0...3
+        var rightSquares = [UIView]()
+        for _ in 0...19
         {
-            let circleView = UIView(x: 0, y: 0, w: 20, h: 20, bgColor: .black, superView: boxView)
-            circleView.rounded() ; circleView.borded(color: .black)
-            circleViewList2.append(circleView)
+            let squareView = UIView(x: 0, y: 0, w: squareSize, h: squareSize, superView: contentView)
+            
+            squareView.backgroundColor = (UIColor(r: 28, g: 55, b: 81))
+            
+            rightSquares.append(squareView)
         }
-        alignOnY(views: circleViewList2, spacing: 15, x: boxView.w / 2 - 10, superView: boxView)
+        alignOnY(views: rightSquares, spacing: squareSize, x: view.w - squareSize, superView: contentView)
+    }
+    
+    func drawBottomView()
+    {
+        // bottomView
         
-        UIView.animate(withDuration: 2, animations: {
-            alignOnY(views: circleViewList1, spacing: 15, x: boxView.w / 2 - 10, superView: boxView)
-            alignOnX(views: circleViewList2, spacing: 15, y: boxView.h / 2 - 10, superView: boxView)
-        })
-        
-        let b = UIButton(x: 0, y: 0, w: 0, h: 64, superView: view)
-        b.backgroundColor = .black
-        
-        let button = UIButton(x: view.w / 2 - 140, y: view.h - 70, w: 280, h: 50, titleColor: .white, bgColor: .black, title: "Easy Swift", alignment: .center, selector: #selector(buttonClicked), superView: view)
-        
-        button.rounded()
-        
-        UIView.animate(withDuration: 1, delay: 3, animations: {
-            b.frame = CGRect(x: 0, y: 0, width: self.view.w , height: 65)
-            UIView.animate(withDuration: 3, delay: 3, animations: {
-                
-                for circle in circleViewList1 + circleViewList2 {
-                    circle.frame = CGRect(x: 0, y: 0, width: 0, height: 0)
-                    circle.centeredInSuperView()
-                    circle.backgroundColor = .orange
-                }
-                UIView.animate(withDuration: 3, delay: 6, animations: {
-                    
-                    for circle in circleViewList1 + circleViewList2
-                    {
-                        circle.frame.size = CGSize(width: 20, height: 20)
-                        alignOnY(views: circleViewList1, spacing: 15, x: boxView.w / 2 - 10, superView: boxView)
-                        alignOnX(views: circleViewList2, spacing: 15, y: boxView.h / 2 - 10, superView: boxView)
-                    }
-                    button.backgroundColor = .orange
-                    button.borded(color: .black)
-                })
-            })
-        })
+        var circlesButton = [UIButton]()
+        for i in 0...4
+        {
+            let circle = UIButton(x: 0, y: 0, w: 30, h: 30, bgColor: UIColor(r: 28, g: 55, b: 81), superView: view)
+            
+            circle.rounded()
+            
+            circle.setProperties(text: i.toString, size: 18, color: UIColor(r: 131, g: 140, b: 150))
+            circle.setAction(action: #selector(buttonClicked(sender:)), tag: i)
+            
+            circlesButton.append(circle)
+        }
+        alignOnX(views: circlesButton, spacing: 15, y: view.h - 50, superView: view)
+    }
 
-        
-    }
-    
-    func buttonClicked()
-    {
-        print(#function)
+    func buttonClicked(sender: UIButton) {
+        print("buttonClicked (tag : \(sender.tag))")
+        numberLabel.text = sender.tag.toString
     }
 }
