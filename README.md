@@ -4,11 +4,7 @@ Extensions add new functionality to an existing class, structure, enumeration, o
 
 # Extensions available:
 
-- [CGRect](EasySwift/EasySwift/CGRect.swift) - [UIView](EasySwift/EasySwift/UIView.swift) 
-
-- [UIButton](EasySwift/EasySwift/UIButton.swift) - [UILabel](EasySwift/EasySwift/UILabel.swift)
-
-- [UIImageView](EasySwift/EasySwift/UIImageView.swift) - [UIImage](EasySwift/EasySwift/UIImage.swift) - [UIColor](EasySwift/EasySwift/UIColor.swift)
+- [CGRect](EasySwift/EasySwift/CGRect.swift) - [UIView](EasySwift/EasySwift/UIView.swift) - [UIButton](EasySwift/EasySwift/UIButton.swift) - [UILabel](EasySwift/EasySwift/UILabel.swift) - [UIImageView](EasySwift/EasySwift/UIImageView.swift) - [UIImage](EasySwift/EasySwift/UIImage.swift) - [UIColor](EasySwift/EasySwift/UIColor.swift)
 
 - [UITextfield](EasySwift/EasySwift/UITextfield.swift) - [UITextView](EasySwift/EasySwift/UITextView.swift) - [UIScrollView](EasySwift/EasySwift/UIScrollView.swift) - [UIViewController](EasySwift/EasySwift/UIViewController.swift)
 
