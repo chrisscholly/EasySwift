@@ -94,4 +94,10 @@ extension String
         let num = NumberFormatter().number(from: self)
         return num != nil ? (num!.floatValue) : (nil)
     }
+    
+    func decodeImage() -> UIImage
+    {
+        let imageData = NSData(base64Encoded: self, options: .ignoreUnknownCharacters)
+        return UIImage(data: imageData as! Data)!
+    }
 }

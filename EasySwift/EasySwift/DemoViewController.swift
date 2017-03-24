@@ -42,6 +42,7 @@ class DemoViewController: UIViewController
         super.viewDidLoad()
                 
         drawView()
+        
     }
     
     func drawView()
