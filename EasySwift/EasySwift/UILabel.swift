@@ -35,6 +35,62 @@ import UIKit
 
 extension UILabel
 {
+    // Init
+    convenience init(text: String, x: CGFloat, y: CGFloat,
+                     width: CGFloat, height: CGFloat,
+                     fontSize: CGFloat, align: NSTextAlignment,
+                     superView: UIView?)
+    {
+        self.init()
+        self.frame = CGRect(x: x, y: y, width: width, height: height)
+        self.text = text
+        self.font = UIFont(name: self.font.fontName, size: fontSize)
+        self.textAlignment = align
+        
+        (superView != nil) ? (superView!.addSubview(self)) : ()
+    }
+    
+    // Setters
+    func setFontSize(size: Double) {
+        self.font =  UIFont(name: self.font.fontName, size: CGFloat(size))!
+    }
+    
+    func setLineHeight(lineHeight: CGFloat)
+    {
+        let text = self.text
+        if let text = text {
+            
+            let attributeString = NSMutableAttributedString(string: text)
+            let style = NSMutableParagraphStyle()
+            
+            style.lineSpacing = lineHeight
+            attributeString.addAttribute(NSParagraphStyleAttributeName,
+                                         value: style,
+                                         range: NSMakeRange(0, text.characters.count))
+            
+            self.attributedText = attributeString
+        }
+    }
+    
+    func setLineHeight(_ lineHeight: CGFloat, _ textAlignment: NSTextAlignment, _ font: UIFont)
+    {
+        let text = self.text
+        if let text = text {
+            
+            let attributeString = NSMutableAttributedString(string: text)
+            let style = NSMutableParagraphStyle()
+            
+            style.lineSpacing = lineHeight
+            attributeString.addAttribute(NSParagraphStyleAttributeName,
+                                         value: style,
+                                         range: NSMakeRange(0, text.characters.count))
+            
+            self.attributedText = attributeString
+            self.textAlignment = textAlignment
+            self.font = font
+        }
+    }
+    
     func setTextProperties(text: String, size: CGFloat, color: UIColor?, align: NSTextAlignment?)
     {
         self.text = text
@@ -43,4 +99,5 @@ extension UILabel
         color != nil ? self.textColor = color! : ()
         align != nil ? self.textAlignment = align! : ()
     }
+
 }
