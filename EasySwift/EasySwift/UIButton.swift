@@ -104,4 +104,10 @@ extension UIButton
         self.titleLabel!.font = UIFont(name: self.titleLabel!.font.fontName, size: size)
         color != nil ? self.setTitleColor(color, for: .normal) : ()
     }
+    
+    func setAction(action: Selector, tag: Int?)
+    {
+        self.addTarget(nil, action: action, for: .touchUpInside)
+        if tag != nil { self.tag = tag! }
+    }
 }

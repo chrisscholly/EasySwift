@@ -50,6 +50,21 @@ extension UILabel
         (superView != nil) ? (superView!.addSubview(self)) : ()
     }
     
+    convenience init(text: String, x: CGFloat, y: CGFloat,
+                     width: CGFloat, height: CGFloat, textColor: UIColor,
+                     fontSize: CGFloat, align: NSTextAlignment,
+                     superView: UIView?)
+    {
+        self.init()
+        self.frame = CGRect(x: x, y: y, width: width, height: height)
+        self.text = text
+        self.textColor = textColor
+        self.font = UIFont(name: self.font.fontName, size: fontSize)
+        self.textAlignment = align
+        
+        (superView != nil) ? (superView!.addSubview(self)) : ()
+    }
+    
     // Setters
     func setFontSize(size: Double) {
         self.font =  UIFont(name: self.font.fontName, size: CGFloat(size))!
