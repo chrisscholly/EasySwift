@@ -11,15 +11,18 @@ Extensions add new functionality to an existing class, structure, enumeration, o
 - [String](EasySwift/EasySwift/String.swift) - [Date](EasySwift/EasySwift/Date.swift) - [Int](EasySwift/EasySwift/Int.swift) - [Double](EasySwift/EasySwift/Double.swift\
 ) - [Float](EasySwift/EasySwift/Float.swift) - [Double](EasySwift/EasySwift/Double.swift) - [CGFloat](EasySwift/EasySwift/CGFloat.swift)
 
+# Helpers:
+
+- [Device](EasySwift/EasySwift/Device.swift)
+- [Defaults](EasySwift/EasySwift/Defaults.swift)
+- [Reachability](EasySwift/EasySwift/Reachability.swift)
+
 # Custom classes:
 
 - [TextfieldView](EasySwift/EasySwift/TextfieldView.swift)
-- [Device](EasySwift/EasySwift/Device.swift)
 
 # Contact
 
-Feel free to contact me:
+Feel free to contact me: sabbe.kev@gmail.com
 
-sabbe.kev@gmail.com
-
-Kevin SABBE
+Kevin SABBE, iOS Developer since 2014
