@@ -1,6 +1,6 @@
 # Easy Swift (3.x+)
 
-Develop you iOS projects faster and safer with Easy Swift!
+Develop your iOS projects faster with Easy Swift!
 
 # Extensions available:
 
