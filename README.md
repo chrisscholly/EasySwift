@@ -4,17 +4,26 @@ Extensions add new functionality to an existing class, structure, enumeration, o
 
 # Extensions available:
 
-- [UIView](EasySwift/EasySwift/UIView.swift) - [UIButton](EasySwift/EasySwift/UIButton.swift) - [UILabel](EasySwift/EasySwift/UILabel.swift) - [UIColor](EasySwift/EasySwift/UIColor.swift)
+- [CGRect](EasySwift/EasySwift/CGRect.swift) - [UIView](EasySwift/EasySwift/UIView.swift) 
 
-- [String](EasySwift/EasySwift/String.swift) - [Date](EasySwift/EasySwift/Date.swift) - [Int](EasySwift/EasySwift/Int.swift)
+- [UIButton](EasySwift/EasySwift/UIButton.swift) - [UILabel](EasySwift/EasySwift/UILabel.swift)
+
+- [UIImageView](EasySwift/EasySwift/UIImageView.swift) - [UIImage](EasySwift/EasySwift/UIImage.swift) - [UIColor](EasySwift/EasySwift/UIColor.swift)
+
+- [String](EasySwift/EasySwift/String.swift) - [Date](EasySwift/EasySwift/Date.swift) 
+
+- [Int](EasySwift/EasySwift/Int.swift) - [Double](EasySwift/EasySwift/Double.swift) - [Float](EasySwift/EasySwift/Float.swift) - [Double](EasySwift/EasySwift/Double.swift) - [CGFloat](EasySwift/EasySwift/CGFloat.swift) 
+
+- [UITextfield](EasySwift/EasySwift/UITextfield.swift) - [UITextView](EasySwift/EasySwift/UITextView.swift)
+
+- [UIScrollView(EasySwift/EasySwift/UIScrollView.swift)
 
 - [UIViewController](EasySwift/EasySwift/UIViewController.swift)
-
-- [CGRect](EasySwift/EasySwift/CGRect.swift)
 
 # Custom classes:
 
 - [TextfieldView](EasySwift/EasySwift/TextfieldView.swift)
+- [Device](EasySwift/EasySwift/Device.swift)
 
 # Contact
 

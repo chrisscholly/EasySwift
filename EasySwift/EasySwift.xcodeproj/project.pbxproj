@@ -20,8 +20,17 @@
 		133F7A311E81984100D4A9F9 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133F7A301E81984100D4A9F9 /* UIButton.swift */; };
 		133F7A331E8199BC00D4A9F9 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133F7A321E8199BC00D4A9F9 /* String.swift */; };
 		133F7A351E819B7900D4A9F9 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133F7A341E819B7900D4A9F9 /* Date.swift */; };
+		135FBAD71E851A1E00C40E0F /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FBAD61E851A1E00C40E0F /* UIImage.swift */; };
+		135FBAD91E851A4600C40E0F /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FBAD81E851A4600C40E0F /* UIImageView.swift */; };
+		135FBADB1E851AB100C40E0F /* UITextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FBADA1E851AB100C40E0F /* UITextfield.swift */; };
+		135FBADD1E851AE200C40E0F /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FBADC1E851AE200C40E0F /* UITextView.swift */; };
+		135FBADF1E851B1800C40E0F /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FBADE1E851B1800C40E0F /* UIScrollView.swift */; };
 		1365692F1E83E3BF0036DAE4 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1365692E1E83E3BF0036DAE4 /* Int.swift */; };
 		137567D81E81395100F0A98A /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137567D71E81395100F0A98A /* CGRect.swift */; };
+		1391C1701E85100200D34419 /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391C16F1E85100200D34419 /* Float.swift */; };
+		1391C1721E85104200D34419 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391C1711E85104200D34419 /* CGFloat.swift */; };
+		1391C1741E85107700D34419 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391C1731E85107700D34419 /* Double.swift */; };
+		1391C1761E8512FD00D34419 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391C1751E8512FD00D34419 /* Device.swift */; };
 		13975A951E81238D00C99BBC /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13975A941E81238D00C99BBC /* UIColor.swift */; };
 		13975A971E81378500C99BBC /* TextfieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13975A961E81378500C99BBC /* TextfieldView.swift */; };
 		13975A991E81385400C99BBC /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13975A981E81385400C99BBC /* UILabel.swift */; };
@@ -64,8 +73,17 @@
 		133F7A301E81984100D4A9F9 /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		133F7A321E8199BC00D4A9F9 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		133F7A341E819B7900D4A9F9 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		135FBAD61E851A1E00C40E0F /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		135FBAD81E851A4600C40E0F /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		135FBADA1E851AB100C40E0F /* UITextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextfield.swift; sourceTree = "<group>"; };
+		135FBADC1E851AE200C40E0F /* UITextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextView.swift; sourceTree = "<group>"; };
+		135FBADE1E851B1800C40E0F /* UIScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
 		1365692E1E83E3BF0036DAE4 /* Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		137567D71E81395100F0A98A /* CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
+		1391C16F1E85100200D34419 /* Float.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Float.swift; sourceTree = "<group>"; };
+		1391C1711E85104200D34419 /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		1391C1731E85107700D34419 /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		1391C1751E8512FD00D34419 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		13975A941E81238D00C99BBC /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		13975A961E81378500C99BBC /* TextfieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextfieldView.swift; sourceTree = "<group>"; };
 		13975A981E81385400C99BBC /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
@@ -120,8 +138,9 @@
 			isa = PBXGroup;
 			children = (
 				1321744B1E80A38400BDE1E3 /* DemoViewController.swift */,
+				135FBAD51E85196000C40E0F /* Types */,
+				1321747A1E80A3A900BDE1E3 /* UI */,
 				1321747D1E80A62E00BDE1E3 /* Custom Class */,
-				1321747A1E80A3A900BDE1E3 /* Extensions&Methods */,
 				137567D91E813E9D00F0A98A /* Others */,
 			);
 			path = EasySwift;
@@ -145,7 +164,7 @@
 			path = EasySwiftUITests;
 			sourceTree = "<group>";
 		};
-		1321747A1E80A3A900BDE1E3 /* Extensions&Methods */ = {
+		1321747A1E80A3A900BDE1E3 /* UI */ = {
 			isa = PBXGroup;
 			children = (
 				137567D71E81395100F0A98A /* CGRect.swift */,
@@ -153,20 +172,36 @@
 				13975A941E81238D00C99BBC /* UIColor.swift */,
 				13975A981E81385400C99BBC /* UILabel.swift */,
 				133F7A301E81984100D4A9F9 /* UIButton.swift */,
-				133F7A321E8199BC00D4A9F9 /* String.swift */,
-				133F7A341E819B7900D4A9F9 /* Date.swift */,
-				1365692E1E83E3BF0036DAE4 /* Int.swift */,
 				131E4DC91E84752000277C62 /* UIViewController.swift */,
+				135FBAD61E851A1E00C40E0F /* UIImage.swift */,
+				135FBAD81E851A4600C40E0F /* UIImageView.swift */,
+				135FBADA1E851AB100C40E0F /* UITextfield.swift */,
+				135FBADC1E851AE200C40E0F /* UITextView.swift */,
+				135FBADE1E851B1800C40E0F /* UIScrollView.swift */,
 			);
-			name = "Extensions&Methods";
+			name = UI;
 			sourceTree = "<group>";
 		};
 		1321747D1E80A62E00BDE1E3 /* Custom Class */ = {
 			isa = PBXGroup;
 			children = (
 				13975A961E81378500C99BBC /* TextfieldView.swift */,
+				1391C1751E8512FD00D34419 /* Device.swift */,
 			);
 			name = "Custom Class";
+			sourceTree = "<group>";
+		};
+		135FBAD51E85196000C40E0F /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				1365692E1E83E3BF0036DAE4 /* Int.swift */,
+				133F7A341E819B7900D4A9F9 /* Date.swift */,
+				133F7A321E8199BC00D4A9F9 /* String.swift */,
+				1391C16F1E85100200D34419 /* Float.swift */,
+				1391C1731E85107700D34419 /* Double.swift */,
+				1391C1711E85104200D34419 /* CGFloat.swift */,
+			);
+			name = Types;
 			sourceTree = "<group>";
 		};
 		137567D91E813E9D00F0A98A /* Others */ = {
@@ -319,17 +354,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1391C1721E85104200D34419 /* CGFloat.swift in Sources */,
+				135FBADD1E851AE200C40E0F /* UITextView.swift in Sources */,
+				1391C1761E8512FD00D34419 /* Device.swift in Sources */,
 				1321747C1E80A3CF00BDE1E3 /* UIView.swift in Sources */,
 				1321744C1E80A38400BDE1E3 /* DemoViewController.swift in Sources */,
 				133F7A331E8199BC00D4A9F9 /* String.swift in Sources */,
 				1365692F1E83E3BF0036DAE4 /* Int.swift in Sources */,
+				1391C1741E85107700D34419 /* Double.swift in Sources */,
 				13975A991E81385400C99BBC /* UILabel.swift in Sources */,
+				135FBADF1E851B1800C40E0F /* UIScrollView.swift in Sources */,
 				132174521E80A38400BDE1E3 /* EasySwift.xcdatamodeld in Sources */,
 				1321744A1E80A38400BDE1E3 /* AppDelegate.swift in Sources */,
 				131E4DCA1E84752000277C62 /* UIViewController.swift in Sources */,
 				13975A971E81378500C99BBC /* TextfieldView.swift in Sources */,
+				135FBAD91E851A4600C40E0F /* UIImageView.swift in Sources */,
 				13975A951E81238D00C99BBC /* UIColor.swift in Sources */,
+				1391C1701E85100200D34419 /* Float.swift in Sources */,
+				135FBADB1E851AB100C40E0F /* UITextfield.swift in Sources */,
 				133F7A351E819B7900D4A9F9 /* Date.swift in Sources */,
+				135FBAD71E851A1E00C40E0F /* UIImage.swift in Sources */,
 				137567D81E81395100F0A98A /* CGRect.swift in Sources */,
 				133F7A311E81984100D4A9F9 /* UIButton.swift in Sources */,
 			);
