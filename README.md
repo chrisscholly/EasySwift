@@ -1,6 +1,6 @@
-# Easy Swift (3.x+)
 
-Develop your iOS projects faster with Easy Swift!
+# Easy Swift : Develop your iOS projects faster than ever !
+<img src="swiftImage.jpg" width="100%" align="center">
 
 # Extensions available:
 
