@@ -14,9 +14,7 @@ Extensions add new functionality to an existing class, structure, enumeration, o
 
 - [Int](EasySwift/EasySwift/Int.swift) - [Double](EasySwift/EasySwift/Double.swift) - [Float](EasySwift/EasySwift/Float.swift) - [Double](EasySwift/EasySwift/Double.swift) - [CGFloat](EasySwift/EasySwift/CGFloat.swift) 
 
-- [UITextfield](EasySwift/EasySwift/UITextfield.swift) - [UITextView](EasySwift/EasySwift/UITextView.swift)
-
-- [UIScrollView(EasySwift/EasySwift/UIScrollView.swift)
+- [UITextfield](EasySwift/EasySwift/UITextfield.swift) - [UITextView](EasySwift/EasySwift/UITextView.swift) - [UIScrollView](EasySwift/EasySwift/UIScrollView.swift)
 
 - [UIViewController](EasySwift/EasySwift/UIViewController.swift)
 
