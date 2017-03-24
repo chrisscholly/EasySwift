@@ -13,13 +13,11 @@ Extensions add new functionality to an existing class, structure, enumeration, o
 - [String](EasySwift/EasySwift/String.swift) - [Date](EasySwift/EasySwift/Date.swift) - [Int](EasySwift/EasySwift/Int.swift) - [Double](EasySwift/EasySwift/Double.swift\
 ) - [Float](EasySwift/EasySwift/Float.swift) - [Double](EasySwift/EasySwift/Double.swift) - [CGFloat](EasySwift/EasySwift/CGFloat.swift)
 
-# Helpers:
+# Custom classe & Helpers:
 
 - [Device](EasySwift/EasySwift/Device.swift)
 - [Defaults](EasySwift/EasySwift/Defaults.swift)
 - [Reachability](EasySwift/EasySwift/Reachability.swift)
-
-# Custom classes:
 
 - [TextfieldView](EasySwift/EasySwift/TextfieldView.swift)
 
